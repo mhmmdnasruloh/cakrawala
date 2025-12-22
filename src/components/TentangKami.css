@@ -1,0 +1,874 @@
+/* TentangKami.css - Simple Edumaster-style hero section */
+.tentangkami-page {
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tentangkami-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section - SIMPLE VERSION like Edumaster */
+.tentangkami-hero {
+  background: #0a0a6e;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.tentangkami-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tentangkami-hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.tentangkami-hero-badge span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tentangkami-hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  color: white;
+}
+
+.tentangkami-hero-description {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tentangkami-hero-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tentangkami-hero-description strong {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+/* About Section */
+.tentangkami-about-section {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.tentangkami-about-content h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0a0a6e;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.tentangkami-about-content h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0a0a6e, #4a4ac4);
+  border-radius: 2px;
+}
+
+.tentangkami-about-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 50px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tentangkami-about-text {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(10, 10, 110, 0.1);
+  text-align: justify;
+  border-left: 5px solid #0a0a6e;
+}
+
+.tentangkami-about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.tentangkami-about-text strong {
+  color: #0a0a6e;
+  font-weight: 600;
+}
+
+.tentangkami-legal-badge img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(10, 10, 110, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.tentangkami-legal-badge img:hover {
+  transform: scale(1.03);
+}
+
+/* Vision Mission Section */
+.tentangkami-vision-mission {
+  margin-top: 80px;
+  background: transparent;
+  padding: 0;
+}
+
+.tentangkami-vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tentangkami-vision-card,
+.tentangkami-mission-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(10, 10, 110, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tentangkami-vision-card::before,
+.tentangkami-mission-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #0a0a6e, #4a4ac4);
+}
+
+.tentangkami-vision-card:hover,
+.tentangkami-mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(10, 10, 110, 0.15);
+}
+
+.tentangkami-vision-card h3,
+.tentangkami-mission-card h3 {
+  color: #0a0a6e;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.tentangkami-vision-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.tentangkami-mission-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.tentangkami-mission-card li {
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #666;
+  position: relative;
+  padding-left: 35px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.tentangkami-mission-card li:last-child {
+  border-bottom: none;
+}
+
+.tentangkami-mission-card li:before {
+  content: "✓";
+  color: #0a0a6e;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* CEO Message Section */
+.tentangkami-ceo-section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.tentangkami-ceo-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tentangkami-ceo-header h2 {
+  font-size: 2.5rem;
+  color: #0a0a6e;
+  font-weight: 700;
+  position: relative;
+}
+
+.tentangkami-ceo-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0a0a6e, #4a4ac4);
+  border-radius: 2px;
+}
+
+.tentangkami-ceo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tentangkami-ceo-quote {
+  display: flex;
+  align-items: center;
+}
+
+.tentangkami-quote-container {
+  position: relative;
+  padding: 40px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(10, 10, 110, 0.1);
+  border-left: 5px solid #0a0a6e;
+}
+
+.tentangkami-quote-icon {
+  font-size: 4rem;
+  color: #0a0a6e;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  opacity: 0.3;
+}
+
+.tentangkami-ceo-message {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  font-style: italic;
+  margin: 20px 0 30px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.tentangkami-quote-author {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #0a0a6e;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.tentangkami-author-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #0a0a6e;
+  flex-shrink: 0;
+}
+
+.tentangkami-author-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tentangkami-author-info h4 {
+  color: #0a0a6e;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.tentangkami-author-info p {
+  color: #4a4ac4;
+  font-weight: 500;
+  margin: 0;
+}
+
+.tentangkami-ceo-media {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tentangkami-youtube-embed {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(10, 10, 110, 0.2);
+  border: 3px solid white;
+  outline: 1px solid rgba(10, 10, 110, 0.1);
+}
+
+.tentangkami-youtube-embed iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+  display: block;
+}
+
+.tentangkami-youtube-channel {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid #0a0a6e;
+  text-align: center;
+}
+
+.tentangkami-channel-details h4 {
+  color: #0a0a6e;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.tentangkami-channel-details p {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.tentangkami-subscribe-btn {
+  background: #0a0a6e;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid #0a0a6e;
+}
+
+.tentangkami-subscribe-btn:hover {
+  background: white;
+  color: #0a0a6e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(10, 10, 110, 0.3);
+}
+
+/* Program Section */
+.tentangkami-program-section {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.tentangkami-program-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.tentangkami-program-left h2 {
+  color: #0a0a6e;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.tentangkami-program-left p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+/* Accordion */
+.tentangkami-accordion-block {
+  margin-bottom: 10px;
+}
+
+.tentangkami-accordion-item {
+  width: 100%;
+  background: #f5f5f5;
+  border: none;
+  padding: 15px 20px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 4px solid transparent;
+}
+
+.tentangkami-accordion-item:hover {
+  background: #eaeaea;
+  border-left-color: #4a4ac4;
+}
+
+.tentangkami-accordion-item.tentangkami-active {
+  background: #0a0a6e;
+  color: #fff;
+  border-left-color: #ffd700;
+}
+
+.tentangkami-accordion-icon {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.tentangkami-accordion-item.tentangkami-active .tentangkami-accordion-icon {
+  transform: rotate(180deg);
+}
+
+.tentangkami-accordion-content {
+  display: none;
+  padding: 15px 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin-top: 5px;
+  border-left: 4px solid #0a0a6e;
+}
+
+.tentangkami-accordion-content.tentangkami-show {
+  display: block;
+  animation: tentangkamiFadeIn 0.3s ease;
+}
+
+@keyframes tentangkamiFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tutors Section */
+.tentangkami-tutors-anchor {
+  position: relative;
+  scroll-margin-top: 100px;
+}
+
+.tentangkami-tutors-header-anchor {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.tentangkami-tutor-section.tentangkami-highlight-section {
+  animation: tentangkamiHighlight 2s ease-in-out;
+}
+
+@keyframes tentangkamiHighlight {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+/* Poster Section */
+.tentangkami-poster-section {
+  margin: 40px 0;
+  padding: 40px 20px;
+  background: white;
+}
+
+.tentangkami-poster-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tentangkami-poster-image {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(10, 10, 110, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.tentangkami-poster-image:hover {
+  transform: scale(1.02);
+}
+
+.tentangkami-poster-action {
+  text-align: center;
+}
+
+.tentangkami-poster-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tentangkami-apply-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #0a0a6e, #4a4ac4);
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 16px rgba(10, 10, 110, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.tentangkami-apply-btn:hover {
+  background: linear-gradient(135deg, #4a4ac4, #0a0a6e);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(10, 10, 110, 0.5);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Media Section */
+.tentangkami-media-section {
+  width: 100%;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f8faff 0%, #ffffff 50%, #f0f4ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.tentangkami-media-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0a0a6e;
+  margin-bottom: 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #0a0a6e, #4a4ac4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.tentangkami-media-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0a0a6e, #4a4ac4);
+  border-radius: 2px;
+}
+
+/* Media Grid */
+.tentangkami-media-grid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tentangkami-media-logo {
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(10, 10, 110, 0.1);
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(10, 10, 110, 0.1);
+}
+
+.tentangkami-media-logo:hover {
+  transform: scale(1.1);
+}
+
+.tentangkami-media-image {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(0.3);
+  transition: filter 0.3s ease;
+}
+
+.tentangkami-media-logo:hover .tentangkami-media-image {
+  filter: grayscale(0);
+}
+
+/* Map Section */
+.tentangkami-map-section {
+  background: white;
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(10, 10, 110, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(10, 10, 110, 0.1);
+  margin-top: 20px;
+  position: relative;
+}
+
+.tentangkami-map-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0a0a6e, #4a4ac4, #0a0a6e);
+  border-radius: 25px 25px 0 0;
+}
+
+.tentangkami-map-wrapper {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(10, 10, 110, 0.15);
+  position: relative;
+  height: 400px;
+  margin-bottom: 25px;
+  border: 3px solid white;
+  outline: 1px solid rgba(10, 10, 110, 0.2);
+}
+
+.tentangkami-map-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.tentangkami-map-wrapper:hover .tentangkami-map-iframe {
+  transform: scale(1.01);
+}
+
+/* Map Actions */
+.tentangkami-map-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.tentangkami-direction-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #0a0a6e, #4a4ac4);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 15px 35px;
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 5px 15px rgba(10, 10, 110, 0.3), 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.tentangkami-direction-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.tentangkami-direction-btn:hover::before {
+  left: 100%;
+}
+
+.tentangkami-direction-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(10, 10, 110, 0.4), 0 5px 10px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #4a4ac4, #0a0a6e);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tentangkami-hero {
+    padding: 80px 20px;
+  }
+
+  .tentangkami-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .tentangkami-hero-description p {
+    font-size: 1.1rem;
+  }
+
+  .tentangkami-about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .tentangkami-vm-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .tentangkami-ceo-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .tentangkami-quote-container {
+    padding: 30px 20px;
+  }
+
+  .tentangkami-ceo-message {
+    font-size: 1.1rem;
+  }
+
+  .tentangkami-quote-author {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .tentangkami-author-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tentangkami-youtube-embed iframe {
+    height: 250px;
+  }
+
+  .tentangkami-program-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .tentangkami-media-title {
+    font-size: 2.2rem;
+  }
+
+  .tentangkami-map-section {
+    padding: 30px 20px;
+  }
+
+  .tentangkami-map-wrapper {
+    height: 300px;
+  }
+
+  .tentangkami-poster-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .tentangkami-apply-btn {
+    padding: 12px 30px;
+    font-size: 15px;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tentangkami-hero {
+    padding: 60px 15px;
+  }
+
+  .tentangkami-hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .tentangkami-hero-description p {
+    font-size: 1rem;
+  }
+
+  .tentangkami-about-section,
+  .tentangkami-ceo-section,
+  .tentangkami-program-section {
+    padding: 60px 15px;
+  }
+
+  .tentangkami-about-text,
+  .tentangkami-vision-card,
+  .tentangkami-mission-card {
+    padding: 25px;
+  }
+
+  .tentangkami-youtube-embed iframe {
+    height: 200px;
+  }
+
+  .tentangkami-media-title {
+    font-size: 1.8rem;
+  }
+
+  .tentangkami-map-section {
+    padding: 25px 15px;
+  }
+
+  .tentangkami-map-wrapper {
+    height: 250px;
+  }
+
+  .tentangkami-apply-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}

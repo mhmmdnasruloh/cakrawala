@@ -1,0 +1,940 @@
+/* Bimbel Page Styles - Updated with Webinar Style */
+.bimbel-detail-page {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.bimbel-hero {
+  background: linear-gradient(135deg, #0a0a6e 0%, #1a1a8e 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.bimbel-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.bimbel-hero .highlight {
+  background: linear-gradient(45deg, #ffcc00, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+}
+
+.feature-text {
+  text-align: left;
+}
+
+.feature-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.feature-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Main Content */
+.bimbel-main-content {
+  padding: 80px 0;
+}
+
+.content-layout {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Poster Section */
+.poster-section {
+  margin-bottom: 80px;
+}
+
+.poster-container {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.bimbel-poster {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+/* About Section */
+.about-section {
+  margin-bottom: 80px;
+}
+
+.about-content {
+  background: white;
+  border-radius: 12px;
+  padding: 50px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.lead-text {
+  font-size: 1.2rem;
+  color: #475569;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.objectives-grid h3 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.objectives-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.objective-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border-left: 4px solid #0a0a6e;
+  transition: transform 0.2s ease;
+}
+
+.objective-item:hover {
+  transform: translateX(5px);
+}
+
+.objective-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.objective-text h4 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.objective-text p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-bottom: 80px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.benefit-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #0a0a6e;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+  font-size: 1.2rem;
+  color: #1e293b;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.benefit-card p {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Requirements Section */
+.requirements-section {
+  margin-bottom: 80px;
+}
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.requirement-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.card-number {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0a0a6e;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.requirement-card h3 {
+  font-size: 1.2rem;
+  color: #1e293b;
+  margin: 20px 0 12px;
+  font-weight: 600;
+}
+
+.requirement-card p {
+  color: #64748b;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Schedule Section */
+.schedule-section {
+  margin-bottom: 80px;
+}
+
+.schedule-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  color: #1e293b;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid #0a0a6e;
+  padding-bottom: 10px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.info-label {
+  color: #64748b;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.info-value {
+  color: #1e293b;
+  font-weight: 600;
+  text-align: right;
+}
+
+.info-value.highlight {
+  color: #059669;
+  font-weight: 700;
+}
+
+/* CTA Section */
+.bimbel-cta-section {
+  margin-bottom: 80px;
+}
+
+.bimbel-cta-container {
+  background: white;
+  border-radius: 16px;
+  padding: 60px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.bimbel-cta-container h2 {
+  font-size: 2.2rem;
+  color: #1e293b;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.bimbel-cta-container p {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.bimbel-cta-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* BUTTON STYLES */
+.bimbel-register-btn,
+.bimbel-whatsapp-btn {
+  padding: 18px 40px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  min-width: 280px;
+  font-family: inherit;
+}
+
+.bimbel-btn-primary {
+  background: linear-gradient(135deg, #0a0a6e 0%, #1a1a8e 100%) !important;
+  color: white !important;
+  box-shadow: 0 6px 20px rgba(10, 10, 110, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.bimbel-btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.bimbel-btn-primary:hover::before {
+  left: 100%;
+}
+
+.bimbel-btn-primary:hover {
+  background: linear-gradient(135deg, #1a1a8e 0%, #0a0a6e 100%) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(10, 10, 110, 0.6);
+}
+
+.bimbel-btn-outline {
+  background: transparent;
+  color: #0a0a6e;
+  border: 2px solid #0a0a6e;
+}
+
+.bimbel-btn-outline:hover {
+  background: #0a0a6e;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.bimbel-form-indicator {
+  background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%);
+  border: 2px solid #0a0a6e;
+  border-radius: 12px;
+  padding: 25px;
+  color: #0a0a6e;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Registration Section */
+.registration-section {
+  margin-bottom: 80px;
+}
+
+.registration-form-container {
+  background: white;
+  border-radius: 12px;
+  padding: 50px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.registration-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #0a0a6e;
+}
+
+/* File Upload */
+.file-upload-area {
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.file-upload-area:hover {
+  border-color: #0a0a6e;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-upload-label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.upload-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.file-upload-label span {
+  font-weight: 600;
+  color: #374151;
+}
+
+.file-upload-label small {
+  color: #6b7280;
+}
+
+.file-preview {
+  text-align: center;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.file-name {
+  font-weight: 600;
+  color: #374151;
+}
+
+.remove-file {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  font-family: inherit;
+}
+
+.remove-file:hover:not(:disabled) {
+  background: #dc2626;
+}
+
+.remove-file:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.preview-image img {
+  max-width: 200px;
+  max-height: 150px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Buttons */
+.action-button {
+  background: #0a0a6e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  font-family: inherit;
+}
+
+.action-button:hover {
+  background: #1a1a8e;
+}
+
+.action-button.outline {
+  background: transparent;
+  color: #0a0a6e;
+  border: 2px solid #0a0a6e;
+}
+
+.action-button.outline:hover {
+  background: #0a0a6e;
+  color: white;
+}
+
+.form-actions {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.submit-button {
+  background: #059669;
+  color: white;
+  border: none;
+  padding: 16px 48px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  font-family: inherit;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #047857;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
+}
+
+.submit-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Success State */
+.success-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #059669;
+  margin-bottom: 20px;
+}
+
+.success-container h3 {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.success-container p {
+  color: #475569;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.success-details {
+  margin: 30px 0;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.success-details p {
+  margin-bottom: 12px;
+  color: #475569;
+}
+
+.success-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Error Message */
+.error-message {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.error-message strong {
+  font-weight: 600;
+}
+
+/* Form Footer */
+.form-footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.form-footer small {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bimbel-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-features {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bimbel-cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bimbel-register-btn,
+  .bimbel-whatsapp-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .submit-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .success-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .about-content,
+  .registration-form-container {
+    padding: 30px 20px;
+  }
+
+  .bimbel-cta-container {
+    padding: 40px 20px;
+  }
+
+  .objective-item {
+    padding: 15px;
+  }
+
+  .info-card {
+    padding: 20px;
+  }
+
+  .benefit-card {
+    padding: 20px;
+  }
+
+  .bimbel-cta-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .bimbel-cta-container p {
+    font-size: 1rem;
+  }
+
+  .bimbel-register-btn,
+  .bimbel-whatsapp-btn {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bimbel-hero {
+    padding: 60px 0;
+  }
+
+  .bimbel-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .schedule-cards {
+    gap: 15px;
+  }
+
+  .objectives-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .benefits-grid {
+    gap: 15px;
+  }
+
+  .requirements-grid {
+    gap: 20px;
+  }
+
+  .registration-form-container {
+    padding: 20px 15px;
+  }
+
+  .file-upload-area {
+    padding: 20px;
+  }
+
+  .preview-image img {
+    max-width: 150px;
+    max-height: 120px;
+  }
+
+  .bimbel-cta-container {
+    padding: 30px 15px;
+  }
+
+  .bimbel-cta-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .bimbel-register-btn,
+  .bimbel-whatsapp-btn {
+    padding: 14px 28px;
+    font-size: 1rem;
+    min-width: 200px;
+  }
+
+  .bimbel-form-indicator {
+    padding: 20px 15px;
+    font-size: 1rem;
+  }
+}
+
+/* Focus States for Accessibility */
+.form-group input:focus,
+.form-group select:focus,
+.action-button:focus,
+.bimbel-register-btn:focus,
+.bimbel-whatsapp-btn:focus,
+.submit-button:focus {
+  outline: 2px solid #0a0a6e;
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .bimbel-hero {
+    background: white !important;
+    color: black !important;
+  }
+
+  .bimbel-cta-section,
+  .registration-section {
+    display: none;
+  }
+
+  .info-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}

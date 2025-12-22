@@ -1,0 +1,46 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cakrawalaeducentre.com/sitemap.xml
+
+# Block halaman yang tidak ingin diindex
+Disallow: /daftar
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Block search engines from indexing React app internal files
+Disallow: /static/js/
+Disallow: /static/css/
+Disallow: /static/media/
+
+# Allow bot crawling for important pages
+Allow: /blog
+Allow: /program
+Allow: /tentang-kami
+Allow: /biaya-les
+Allow: /biaya-les-bimbel
+Allow: /bimbel
+Allow: /free-trial-bimbel
+Allow: /cakrakarir
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Specific bots instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1

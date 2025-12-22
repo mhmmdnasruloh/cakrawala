@@ -1,0 +1,1107 @@
+/* ===== STYLING UNTUK HALAMAN BIAYA LES PRIVAT ===== */
+.cost-page-wrapper {
+  min-height: 100vh;
+}
+
+.cost-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a6e 0%, #1a1a8a 100%);
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cost-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cost-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0a0a6e, #1a1a8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Curriculum Selection */
+.cost-curriculum-selection {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cost-curriculum-selection h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Button Groups */
+.cost-curriculum-buttons,
+.cost-program-buttons,
+.cost-subprogram-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* Base Button Styles */
+.cost-curriculum-button,
+.cost-program-button,
+.cost-subprogram-button {
+  padding: 15px 30px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  color: #555;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  min-width: 120px;
+}
+
+.cost-curriculum-button {
+  font-size: 1.1rem;
+  padding: 18px 35px;
+  min-width: 200px;
+}
+
+.cost-program-button {
+  min-width: 150px;
+}
+
+.cost-subprogram-button {
+  padding: 12px 25px;
+  min-width: 130px;
+  font-size: 0.95rem;
+}
+
+/* Button Hover and Active States */
+.cost-curriculum-button:hover,
+.cost-program-button:hover,
+.cost-subprogram-button:hover {
+  border-color: #0a0a6e;
+  color: #0a0a6e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(10, 10, 110, 0.2);
+}
+
+.cost-curriculum-button.active,
+.cost-program-button.active,
+.cost-subprogram-button.active {
+  background: linear-gradient(135deg, #0a0a6e, #1a1a8a);
+  color: white;
+  border-color: #0a0a6e;
+  box-shadow: 0 8px 25px rgba(10, 10, 110, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Pricing Section untuk Les Privat */
+.cost-pricing-section {
+  margin-top: 50px;
+}
+
+.cost-pricing-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* Area Section Styling (Jabodetabek & Luar Jabodetabek) */
+.cost-area-section {
+  margin-bottom: 60px;
+  padding: 30px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+  position: relative;
+}
+
+.cost-area-section:last-of-type {
+  margin-bottom: 50px;
+}
+
+.cost-area-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0a0a6e;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.cost-area-icon {
+  font-size: 2rem;
+}
+
+.cost-area-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Styling khusus untuk area Luar Jabodetabek */
+.cost-area-outside {
+  background: linear-gradient(135deg, #fff5e6 0%, #ffe4cc 100%);
+  border: 2px solid #ffcc80;
+}
+
+.cost-area-outside .cost-area-title {
+  color: #e65100;
+}
+
+.cost-area-outside .cost-pricing-card {
+  border-color: #ffcc80;
+}
+
+.cost-area-outside .cost-pricing-card::before {
+  background: linear-gradient(90deg, #ff9800, #e65100);
+}
+
+.cost-area-outside .cost-package-tittle,
+.cost-area-outside .cost-package-price {
+  color: #e65100;
+}
+
+.cost-area-outside .cost-cta-button {
+  background: linear-gradient(135deg, #ff9800, #e65100);
+}
+
+.cost-area-outside .cost-cta-button:hover {
+  box-shadow: 0 8px 20px rgba(230, 81, 0, 0.4);
+}
+
+.cost-pricing-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.cost-pricing-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 350px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cost-pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: #0a0a6e;
+}
+
+.cost-pricing-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #0a0a6e, #1a1a8a);
+}
+
+.cost-package-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cost-package-tittle {
+  color: #0a0a6e;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.cost-package-name {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cost-package-duration {
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.cost-package-price {
+  color: #0a0a6e;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.cost-package-description {
+  color: #666;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.cost-package-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  flex-grow: 1;
+}
+
+.cost-package-features li {
+  padding: 8px 0;
+  color: #555;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.4;
+}
+
+.cost-package-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.cost-cta-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #0a0a6e, #1a1a8a);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.cost-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(10, 10, 110, 0.4);
+}
+
+/* Additional Info untuk Les Privat */
+.cost-additional-info {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.cost-additional-info h3 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.cost-facilities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cost-facility-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.cost-facility-icon {
+  font-size: 1.5rem;
+}
+
+/* ===== STYLING UNTUK HALAMAN BIMBEL ===== */
+.bimbel-page-wrapper {
+  min-height: 100vh;
+}
+
+.bimbel-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a6e 0%, #1a1a8e 100%);
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bimbel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.bimbel-title {
+  text-align: center;
+  color: #0a0a6e;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0a0a6e, #1a1a8e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Program Selection untuk Bimbel */
+.bimbel-program-selection {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.bimbel-program-selection h2 {
+  color: #0a0a6e;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.bimbel-program-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.bimbel-program-button {
+  padding: 15px 30px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  color: #555;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  min-width: 120px;
+}
+
+.bimbel-program-button:hover {
+  border-color: #0a0a6e;
+  color: #0a0a6e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(10, 10, 110, 0.2);
+}
+
+.bimbel-program-button.active {
+  background: linear-gradient(135deg, #0a0a6e, #1a1a8e);
+  color: white;
+  border-color: #0a0a6e;
+  box-shadow: 0 8px 25px rgba(10, 10, 110, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Pricing Section untuk Bimbel */
+.bimbel-pricing-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.bimbel-pricing-title {
+  color: #0a0a6e;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* Single Pricing Container - untuk menampilkan 1 card di tengah */
+.bimbel-single-pricing-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.bimbel-pricing-card {
+  max-width: 450px;
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.bimbel-pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: #0a0a6e;
+}
+
+.bimbel-pricing-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #0a0a6e, #1a1a8e);
+}
+
+.bimbel-package-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bimbel-package-name {
+  color: #0a0a6e;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.bimbel-package-duration {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.bimbel-package-price {
+  color: #0a0a6e;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.bimbel-package-description {
+  color: #666;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.bimbel-package-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  flex-grow: 1;
+}
+
+.bimbel-package-features li {
+  padding: 10px 0;
+  color: #555;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 35px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.bimbel-package-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0a0a6e;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.bimbel-cta-button {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #0a0a6e, #1a1a8e);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.bimbel-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(10, 10, 110, 0.4);
+  background: linear-gradient(135deg, #1a1a8e, #0a0a6e);
+}
+
+/* Additional Info untuk Bimbel */
+.bimbel-additional-info {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bimbel-additional-info h3 {
+  color: #0a0a6e;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.bimbel-facilities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bimbel-facility-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.bimbel-facility-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid #0a0a6e;
+}
+
+.bimbel-facility-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  color: #0a0a6e;
+}
+
+.bimbel-facility-item div {
+  flex: 1;
+}
+
+.bimbel-facility-item strong {
+  display: block;
+  color: #0a0a6e;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.bimbel-facility-item p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Discount Badge */
+.cost-discount-badge,
+.bimbel-discount-badge {
+  background: linear-gradient(135deg, #ffcc00, #e6b800);
+  color: #0a0a6e;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(255, 204, 0, 0.3);
+}
+
+/* No Price Message */
+.cost-no-price-message,
+.bimbel-no-price-message {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  margin: 40px 0;
+}
+
+.cost-no-price-message p,
+.bimbel-no-price-message p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Program Selection untuk Les Privat */
+.cost-program-selection {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cost-program-selection h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.cost-subprogram-selection {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cost-subprogram-selection h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE DESIGN UNTUK KEDUA HALAMAN ===== */
+@media (max-width: 1024px) {
+  .cost-pricing-table {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+  .cost-container,
+  .bimbel-container {
+    padding: 15px;
+    margin: 5px;
+  }
+
+  .cost-title,
+  .bimbel-title {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .cost-curriculum-buttons,
+  .cost-program-buttons,
+  .cost-subprogram-buttons,
+  .bimbel-program-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .cost-curriculum-button,
+  .cost-program-button,
+  .cost-subprogram-button,
+  .bimbel-program-button {
+    width: auto;
+    min-width: auto;
+    padding: 10px 15px;
+    font-size: 0.85rem;
+  }
+
+  .cost-pricing-table {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* Pricing Card Mobile - Compact */
+  .cost-pricing-card,
+  .bimbel-pricing-card {
+    padding: 20px 15px;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  .cost-package-header,
+  .bimbel-package-header {
+    margin-bottom: 12px;
+  }
+
+  .cost-package-tittle {
+    font-size: 1.5rem;
+  }
+
+  .cost-package-name,
+  .bimbel-package-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .cost-package-duration,
+  .bimbel-package-duration {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  /* HARGA LEBIH BESAR DAN VISIBLE DI MOBILE */
+  .cost-package-price,
+  .bimbel-package-price {
+    font-size: 1.8rem !important;
+    font-weight: 800;
+    color: #0a0a6e;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+  .cost-package-description,
+  .bimbel-package-description {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  .cost-package-features,
+  .bimbel-package-features {
+    margin-bottom: 15px;
+  }
+
+  .cost-package-features li,
+  .bimbel-package-features li {
+    padding: 6px 0;
+    padding-left: 25px;
+    font-size: 0.85rem;
+  }
+
+  .cost-cta-button,
+  .bimbel-cta-button {
+    padding: 12px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+  }
+
+  .cost-pricing-title,
+  .bimbel-pricing-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .cost-area-section {
+    padding: 20px 15px;
+    margin-bottom: 30px;
+  }
+
+  .cost-area-title {
+    font-size: 1.3rem;
+    gap: 8px;
+  }
+
+  .cost-area-icon {
+    font-size: 1.4rem;
+  }
+
+  .cost-area-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+
+  .cost-facilities,
+  .bimbel-facilities {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .cost-additional-info,
+  .bimbel-additional-info {
+    padding: 20px 15px;
+  }
+
+  .cost-additional-info h3,
+  .bimbel-additional-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .cost-facility-item,
+  .bimbel-facility-item {
+    flex-direction: row;
+    text-align: left;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .cost-facility-icon,
+  .bimbel-facility-icon {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .cost-page,
+  .bimbel-page {
+    padding: 10px 5px;
+  }
+
+  .cost-container,
+  .bimbel-container {
+    padding: 12px;
+    border-radius: 15px;
+  }
+
+  .cost-title,
+  .bimbel-title {
+    font-size: 1.4rem;
+  }
+
+  .cost-curriculum-button,
+  .cost-program-button,
+  .cost-subprogram-button,
+  .bimbel-program-button {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .cost-pricing-card,
+  .bimbel-pricing-card {
+    padding: 15px 12px;
+  }
+
+  .cost-package-price,
+  .bimbel-package-price {
+    font-size: 1.6rem !important;
+  }
+
+  .cost-package-features li,
+  .bimbel-package-features li {
+    padding-left: 22px;
+    font-size: 0.8rem;
+  }
+
+  .cost-cta-button,
+  .bimbel-cta-button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .cost-additional-info,
+  .bimbel-additional-info {
+    padding: 15px 12px;
+  }
+}
+
+/* Animation for smooth transitions */
+.cost-curriculum-button,
+.cost-program-button,
+.cost-subprogram-button,
+.cost-pricing-card,
+.cost-facility-item,
+.bimbel-program-button,
+.bimbel-pricing-card,
+.bimbel-facility-item {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Loading animation */
+@keyframes costFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cost-pricing-card,
+.bimbel-pricing-card {
+  animation: costFadeIn 0.6s ease-out;
+}
+
+/* Special styling untuk single card bimbel */
+.bimbel-single-card .bimbel-package-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 25px;
+}
+
+.bimbel-single-card .bimbel-package-features {
+  margin-bottom: 35px;
+}
+
+/* Highlight effect untuk card utama bimbel */
+.bimbel-pricing-card {
+  position: relative;
+  z-index: 1;
+}
+
+.bimbel-pricing-card::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #0a0a6e, #1a1a8e, #0a0a6e);
+  border-radius: 17px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bimbel-pricing-card:hover::after {
+  opacity: 1;
+}
+
+.bimbel-pricing-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+@media (max-width: 768px) {
+
+  /* Container untuk area section */
+  .cost-area-section {
+    overflow: visible;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* VERTICAL STACK - tidak pakai horizontal scroll lagi */
+  .cost-pricing-table {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    overflow-x: visible;
+    overflow-y: visible;
+    gap: 15px;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  /* Sembunyikan scrollbar karena tidak perlu */
+  .cost-pricing-table::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Kartu full width */
+  .cost-pricing-card {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
+    padding: 18px 15px;
+    margin: 0;
+  }
+
+  /* Kartu pertama tidak perlu margin khusus */
+  .cost-pricing-card:first-child {
+    margin-left: 0;
+  }
+
+  /* Super compact card untuk mobile */
+  .cost-package-tittle {
+    font-size: 1.1rem !important;
+    margin-bottom: 5px;
+  }
+
+  .cost-package-name {
+    font-size: 1rem !important;
+    margin-bottom: 3px;
+  }
+
+  .cost-package-duration {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+  }
+
+  .cost-package-price {
+    font-size: 1.6rem !important;
+    font-weight: 800;
+    margin-bottom: 5px;
+  }
+
+  .cost-discount-badge {
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    margin-top: 5px;
+  }
+
+  .cost-package-description {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .cost-package-features {
+    margin-bottom: 12px;
+  }
+
+  .cost-package-features li {
+    padding: 4px 0;
+    padding-left: 20px;
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .cost-package-features li::before {
+    font-size: 0.9rem;
+  }
+
+  .cost-cta-button {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  /* Scroll hint indicator */
+  .cost-area-section::after {
+    content: "→ Geser untuk lihat lebih";
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+
+  @media (max-width: 480px) {
+    .cost-pricing-card {
+      flex: 0 0 90%;
+      max-width: 90%;
+      min-width: 260px;
+      padding: 15px 12px;
+    }
+
+    .cost-package-price {
+      font-size: 1.4rem !important;
+    }
+
+    .cost-package-features li {
+      font-size: 0.7rem;
+    }
+  }
+}
